@@ -6,12 +6,12 @@ services:
     container_name: "${PROJECT_NAME}_mariadb"
     stop_grace_period: 30s
     environment:
-      MYSQL_ROOT_PASSWORD: $DB_ROOT_PASSWORD
+      MYSQL_ROOT_PASSWORD: $DB_ROOT_kPASSWORD
       MYSQL_DATABASE: $DB_NAME
       MYSQL_USER: $DB_USER
       MYSQL_PASSWORD: $DB_PASSWORD
-    volumes:
-      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
+#    volumes:
+#      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
 
   php:
     image: wodby/drupal-php:$PHP_TAG
@@ -80,16 +80,16 @@ services:
       - "traefik.http.services.${PROJECT_NAME}_mailhog.loadbalancer.server.port=8025"
       - "traefik.http.routers.${PROJECT_NAME}_mailhog.rule=Host(`mailhog.${PROJECT_BASE_URL}`)"
 
-  adminer:
-    container_name: "${PROJECT_NAME}_adminer"
-    image: wodby/adminer:$ADMINER_TAG
-    environment:
+#  adminer:
+#    container_name: "${PROJECT_NAME}_adminer"
+#    image: wodby/adminer:$ADMINER_TAG
+#    environment:
 # For PostgreSQL:
 #      ADMINER_DEFAULT_DB_DRIVER: pgsql
-      ADMINER_DEFAULT_DB_HOST: $DB_HOST
-      ADMINER_DEFAULT_DB_NAME: $DB_NAME
-    labels:
-      - "traefik.http.routers.${PROJECT_NAME}_adminer.rule=Host(`adminer.${PROJECT_BASE_URL}`)"
+#      ADMINER_DEFAULT_DB_HOST: $DB_HOST
+#      ADMINER_DEFAULT_DB_NAME: $DB_NAME
+#    labels:
+#      - "traefik.http.routers.${PROJECT_NAME}_adminer.rule=Host(`adminer.${PROJECT_BASE_URL}`)"
 
 #  traefik:
 #    image: traefik:v2.0
