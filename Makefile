@@ -1,6 +1,7 @@
 include .env
 
-DRUSH ?= docker-compose exec php ../vendor/bin/drush
+DRUPAL_ROOT ?= /var/www/html/web
+DRUSH ?= docker exec $(shell docker ps --filter name='^/$(PROJECT_NAME)_php' --format "{{ .ID }}") drush -r $(DRUPAL_ROOT) $(filter-out $@,$(MAKECMDGOALS))
 
 install:
 	$(DRUSH) site-install idea \
