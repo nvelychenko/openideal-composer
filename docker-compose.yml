@@ -6,7 +6,7 @@ services:
     container_name: "${PROJECT_NAME}_mariadb"
     stop_grace_period: 30s
     environment:
-      MYSQL_ROOT_PASSWORD: $DB_ROOT_kPASSWORD
+      MYSQL_ROOT_PASSWORD: $DB_ROOT_PASSWORD
       MYSQL_DATABASE: $DB_NAME
       MYSQL_USER: $DB_USER
       MYSQL_PASSWORD: $DB_PASSWORD
