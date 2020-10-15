@@ -54,7 +54,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/istolar/openideal"
+            "url": "https://github.com/nvelychenko/openideal"
         },
         {
             "type": "composer",
