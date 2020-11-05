@@ -10,7 +10,8 @@
         "drupal/core-recommended": "^8.8",
         "drush/drush": "^10",
         "linnovate/openideal": "3.x-dev",
-        "wikimedia/composer-merge-plugin": "^1.4"
+        "wikimedia/composer-merge-plugin": "^1.4",
+        "platformsh/config-reader": "^2.3"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
