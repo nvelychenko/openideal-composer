@@ -35,7 +35,7 @@ info:
 # this key also gets mapped to the appropriate location in project.settings so
 # that the current UI can have its own workflow overridden as well.
 initialize:
-  repository: git://github.com/nvelychenko/openideal-composer.git
+  repository: git://github.com/nvelychenko/openideal-composer.git@3.x-dev
   config: null
   files: []
   profile: PHP
