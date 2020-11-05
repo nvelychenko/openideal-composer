@@ -1,5 +1,5 @@
 {
-    "name": "linnovate/openideal-composer",
+    "name": "istolar/openideal-composer",
     "description": "Project template for OpenideaL Drupal 8 projects.",
     "type": "project",
     "license": "GPL-2.0-or-later",
@@ -9,8 +9,9 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drush/drush": "^10",
-        "linnovate/openideal": "^3.0",
-        "wikimedia/composer-merge-plugin": "^1.4"
+        "linnovate/openideal": "dev-3.x-dev",
+        "wikimedia/composer-merge-plugin": "^1.4",
+        "platformsh/config-reader": "^2.3"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -52,6 +53,11 @@
         "drupal/coder": "^8.3"
     },
     "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nvelychenko/openideal",
+            "no-api": true
+        },
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
