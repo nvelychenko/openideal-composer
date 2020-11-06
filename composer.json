@@ -9,7 +9,7 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drush/drush": "^10",
-        "linnovate/openideal": "dev-3.x-dev",
+        "linnovate/openideal": "dev-3.x-master",
         "wikimedia/composer-merge-plugin": "^1.4",
         "platformsh/config-reader": "^2.3"
     },
@@ -55,7 +55,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/nvelychenko/openideal",
+            "url": "https://github.com/istolar/openideal",
             "no-api": true
         },
         {
