@@ -30,8 +30,7 @@ before_install:
   - composer global require hirak/prestissimo
 
 install:
-  - composer --verbose validate
-  - travis_retry composer update --lock
+  - travis_retry composer install
 
 script:
   - ./vendor/bin/drush site-install --verbose --yes --db-url=sqlite://tmp/site.sqlite
