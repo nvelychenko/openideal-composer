@@ -4,7 +4,7 @@ version: 1
 # Templates are a small amount of information supporting a template URL. Each template is selectable at the project-creation step.
 info:
   # Unique machine name, prefaced by a vendor or organization identifier
-  id: Test/OLTest
+  id: openideal/openideal
   # The human-readable name of the template.
   name: OpenideaLTest
   # Human-readable descriptive text for the template. Supports limited HTML.
@@ -38,4 +38,4 @@ initialize:
   repository: git://github.com/nvelychenko/openideal-composer.git@3.x-dev
   config: null
   files: []
-  profile: PHP
+  profile: Openideal
