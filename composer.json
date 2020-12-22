@@ -9,9 +9,11 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drush/drush": "^10",
-        "linnovate/openideal": "3.x-dev",
+        "linnovate/openideal": "dev-OI-282-pre-release-fixes",
         "wikimedia/composer-merge-plugin": "^1.4",
-        "platformsh/config-reader": "^2.3"
+        "platformsh/config-reader": "^2.3",
+        "drupal/ajax_comments": "1.x-dev#4b0c423",
+        "drupal/ckeditor_mentions": "2.x-dev#272a28e7"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -55,7 +57,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/nvelychenko/openideal",
+            "url": "https://github.com/istolar/openideal",
             "no-api": true
         },
         {
