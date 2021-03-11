@@ -55,7 +55,7 @@
         {
             "type": "vcs",
             "url": "https://github.com/istolar/openideal",
-            "no-api": "true"
+            "no-api": true
         },
         {
             "type": "composer",
